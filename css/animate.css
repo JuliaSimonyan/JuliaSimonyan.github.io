@@ -1179,7 +1179,62 @@ body{
 	text-transform: uppercase;
 	display: inline-block;
 }
+/* Responsive adjustments to ensure all 4 blocks stay side by side */
 
+/* For tablet and smaller screens */
+@media (max-width: 768px) {
+    #countdown {
+        width: 80%; /* Set the countdown block to 80% width of the viewport */
+    }
+
+    #countdown #tiles > span {
+        font-size: 36px;
+        width: 22%; /* Adjust width of each tile to fit 4 blocks side by side */
+        margin: 0 1%; /* Adjust margin to ensure blocks fit within container */
+    }
+
+    #countdown .labels li {
+        font-size: 14px;
+        width: 22%; /* Match the width of the tiles */
+    }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 480px) {
+    #countdown {
+        width: 83%;
+	height: 134px; /* Keep the countdown block to 80% width on smaller devices */
+    }
+
+    #countdown #tiles > span {
+        font-size: 28px;
+        width: 22%; /* Ensure tiles stay side by side even on small screens */
+        margin: 0 1%; /* Adjust margin for spacing */
+    }
+
+    #countdown .labels li {
+        font-size: 12px;
+        width: 22%; /* Match the tile width to ensure consistent layout */
+    }
+}
+
+/* For very small screens (320px and below) */
+@media (max-width: 320px) {
+    #countdown {
+        width: 80%; /* Make sure the countdown fits within 80% width */
+    }
+
+    #countdown #tiles > span {
+        font-size: 24px;
+        width: 23%; /* Slightly increase the width to maintain side-by-side layout */
+        margin: 0 1%;
+    }
+
+    #countdown .labels li {
+        font-size: 10px;
+        width: 23%; /* Match label width to keep alignment */
+    }
+}
 @keyframes bounceOutLeft {
   20% {
     opacity: 1;
