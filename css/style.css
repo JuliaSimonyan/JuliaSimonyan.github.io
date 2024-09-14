@@ -850,16 +850,16 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
-    margin-top:150px;
+    font-size: 80px;
+    margin-top:180px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 60px;
+    margin-top: 100px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1096,7 +1096,7 @@ form label {
   }
   .couple-half .groom img, .couple-half .bride img {
     width: 120px;
-    height: 120px;
+    height: 150px;
     margin: 0 auto;
   }
 }
@@ -1120,6 +1120,7 @@ form label {
   .couple-half .groom, .couple-half .bride {
     margin-left: 0;
     margin-right: 0;
+margin-bottom: 20px;
   }
   .couple-half .desc-groom {
     padding-right: 0;
@@ -1174,7 +1175,7 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
